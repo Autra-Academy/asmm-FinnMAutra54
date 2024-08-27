@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "submerged",
+	"version": "${version}",
+	"name": "Autra Submerged",
+	"description": "Dive into an adventure beneath the waves with Autra Academy's Submerged Minecraft Modding project!",
+	"authors": [
+		"Autra Academy",
+		"Niklaus Wetter",
+		"ME!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/submerged/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.autra.submerged.AutraSubmerged"
+		],
+		"fabric-datagen": [
+			"net.autra.submerged.AutraSubmergedDataGenerator"
+		],
+		"client": [
+			"net.autra.submerged.AutraSubmergedClient"
+		]
+	},
+	"mixins": [
+		"submerged.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
